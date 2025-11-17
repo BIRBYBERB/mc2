@@ -7,7 +7,7 @@ export default function TitleSection({ fadeIn }) {
       }`}>
         Schrodinger's
       </h1>
-      <h2 className={`text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent -mt-2 sm:-mt-3 tracking-wide transform transition-all duration-1000 hover:scale-105 ${
+      <h2 className={`text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-semibold bg-gradient-to-r from-green-600 via-green-500 to-green-400 bg-clip-text text-transparent -mt-2 sm:-mt-3 tracking-wide transform transition-all duration-1000 hover:scale-105 ${
         !fadeIn ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
       }`} style={{ transitionDelay: '200ms' }}>
         Buildings
@@ -16,9 +16,9 @@ export default function TitleSection({ fadeIn }) {
       <div className={`relative mt-4 sm:mt-6 mb-6 sm:mb-8 transition-all duration-1000 ${
         !fadeIn ? 'opacity-0 scale-x-0' : 'opacity-100 scale-x-100'
       }`} style={{ transitionDelay: '400ms' }}>
-        <div className="w-20 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent mx-auto rounded-full animate-pulse" />
-        <div className="w-14 sm:w-16 h-0.5 bg-gradient-to-r from-blue-300 to-indigo-400 mx-auto mt-1 rounded-full opacity-60 animate-pulse" style={{ animationDelay: '500ms' }} />
-        <div className="w-6 sm:w-8 h-0.5 bg-blue-200 mx-auto mt-1 rounded-full opacity-40 animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="w-20 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full animate-pulse" />
+        <div className="w-14 sm:w-16 h-0.5 bg-gradient-to-r from-green-300 to-indigo-400 mx-auto mt-1 rounded-full opacity-60 animate-pulse" style={{ animationDelay: '500ms' }} />
+        <div className="w-6 sm:w-8 h-0.5 bg-green-200 mx-auto mt-1 rounded-full opacity-40 animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
       
       <p className={`text-slate-600 text-sm xs:text-base sm:text-lg font-medium leading-relaxed max-w-xs mx-auto transform transition-all duration-1000 hover:text-slate-700 ${

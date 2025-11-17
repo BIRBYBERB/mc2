@@ -50,9 +50,9 @@ export default function FeaturedMakananSection({ featuredMakanan }) {
                 : 'translate-y-8 opacity-0'
             }`}
           >
-            <div className="relative bg-white/15 backdrop-blur-xl border border-white/25 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:shadow-2xl shadow-blue-500/5 hover:shadow-blue-500/15 transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:bg-white/20">
+            <div className="relative bg-white/15 backdrop-blur-xl border border-white/25 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:shadow-2xl shadow-green-500/5 hover:shadow-green-500/15 transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:bg-white/20">
               
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Recipe Image*/}
               <div className="relative h-32 md:h-56 overflow-hidden">
@@ -66,7 +66,7 @@ export default function FeaturedMakananSection({ featuredMakanan }) {
               
               <div className="relative z-10 p-4 md:p-8">
                 <div className="flex items-center justify-between mb-3 md:mb-4">
-                  <span className="text-xs font-semibold text-blue-700 bg-blue-100/90 px-2 md:px-3 py-1 md:py-1.5 rounded-full">
+                  <span className="text-xs font-semibold text-green-700 bg-green-100/90 px-2 md:px-3 py-1 md:py-1.5 rounded-full">
                     Buildings
                   </span>
                   <div className="flex items-center space-x-1 bg-white/90 px-2 py-1 rounded-full">
@@ -75,7 +75,7 @@ export default function FeaturedMakananSection({ featuredMakanan }) {
                   </div>
                 </div>
                 
-                <h3 className="font-bold text-slate-800 mb-3 md:mb-4 text-base md:text-xl group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
+                <h3 className="font-bold text-slate-800 mb-3 md:mb-4 text-base md:text-xl group-hover:text-green-600 transition-colors duration-200 line-clamp-2">
                   {recipe.name}
                 </h3>
                 

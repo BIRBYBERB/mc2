@@ -10,7 +10,7 @@ export default function HomePage() {
   const featuredMinuman = Object.values(Mobfarms.Farms).slice(0, 2);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 pb-20 md:pb-8">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-indigo-50 pb-20 md:pb-8">
       <HeroSection />
       
       {/* Main Content */}

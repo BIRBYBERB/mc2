@@ -45,7 +45,7 @@ export default function SplashScreen({ onComplete }) {
 
   return (
     <div 
-      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-100 px-4 sm:px-6 transition-all duration-600 ease-out ${
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-100 px-4 sm:px-6 transition-all duration-600 ease-out ${
         !fadeIn ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
       } ${
         fadeOut ? 'opacity-0 scale-105' : ''

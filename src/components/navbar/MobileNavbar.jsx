@@ -21,7 +21,7 @@ export default function MobileNavbar({ currentPage, onNavigate }) {
               key={item.id}
               onClick={() => onNavigate(item.id)}
               className={`flex flex-col items-center py-2 px-3 transition-colors duration-200 ${
-                isActive ? 'text-blue-600' : 'text-gray-400'
+                isActive ? 'text-green-600' : 'text-gray-400'
               }`}
             >
               <IconComponent 

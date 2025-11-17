@@ -2,7 +2,7 @@ export const Buildings = {
   "builds": {
     "resep1": {
       "id": 1,
-      "name": "Nasi Goreng Spesial",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -21,7 +21,7 @@ export const Buildings = {
     },
     "resep2": {
       "id": 2,
-      "name": "Soto Ayam",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -40,7 +40,7 @@ export const Buildings = {
     },
     "resep3": {
       "id": 3,
-      "name": "Rendang Daging",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -59,7 +59,7 @@ export const Buildings = {
     },
     "resep4": {
       "id": 4,
-      "name": "Ayam Goreng Kremes",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -78,7 +78,7 @@ export const Buildings = {
     },
     "resep5": {
       "id": 5,
-      "name": "Gado-Gado",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -97,7 +97,7 @@ export const Buildings = {
     },
     "resep6": {
       "id": 6,
-      "name": "Pempek Palembang",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -116,7 +116,7 @@ export const Buildings = {
     },
     "resep7": {
       "id": 7,
-      "name": "Bakso Sapi",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -135,7 +135,7 @@ export const Buildings = {
     },
     "resep8": {
       "id": 8,
-      "name": "Sate Ayam",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -154,7 +154,7 @@ export const Buildings = {
     },
     "resep9": {
       "id": 9,
-      "name": "Rawon",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",
@@ -173,7 +173,7 @@ export const Buildings = {
     },
     "resep10": {
       "id": 10,
-      "name": "Karedok",
+      "name": "Modern Survival House",
       "ingredients": [
         "60 Oak Planks",
         "20 Oak Logs",

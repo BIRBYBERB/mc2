@@ -13,8 +13,8 @@ export default function Footer({ fadeOut, fadeIn }) {
       }`} style={{ transitionDelay: '1000ms' }}>
 
         <div className="flex justify-center space-x-0.5 sm:space-x-1 mb-2 sm:mb-3">
-          <div className="w-6 sm:w-8 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full animate-pulse" />
-          <div className="w-8 sm:w-12 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full animate-pulse" style={{ animationDelay: '300ms' }} />
+          <div className="w-6 sm:w-8 h-0.5 bg-gradient-to-r from-green-400 to-green-600 rounded-full animate-pulse" />
+          <div className="w-8 sm:w-12 h-0.5 bg-gradient-to-r from-green-500 to-indigo-500 rounded-full animate-pulse" style={{ animationDelay: '300ms' }} />
           <div className="w-6 sm:w-8 h-0.5 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full animate-pulse" style={{ animationDelay: '600ms' }} />
         </div>
         
@@ -22,9 +22,9 @@ export default function Footer({ fadeOut, fadeIn }) {
           Versi 1.0 - © 2014 Schrodinger's Buildings
         </p>
         
-        <div className="w-12 sm:w-16 h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent mx-auto rounded-full animate-pulse opacity-80" />
+        <div className="w-12 sm:w-16 h-0.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full animate-pulse opacity-80" />
         
-        <div className="absolute -top-1.5 sm:-top-2 -left-3 sm:-left-4 w-0.5 sm:w-1 h-0.5 sm:h-1 bg-blue-300 rounded-full animate-ping opacity-60" style={{ animationDelay: '2s' }} />
+        <div className="absolute -top-1.5 sm:-top-2 -left-3 sm:-left-4 w-0.5 sm:w-1 h-0.5 sm:h-1 bg-green-300 rounded-full animate-ping opacity-60" style={{ animationDelay: '2s' }} />
         <div className="absolute -top-0.5 sm:-top-1 -right-3 sm:-right-4 w-0.5 sm:w-1 h-0.5 sm:h-1 bg-indigo-300 rounded-full animate-ping opacity-60" style={{ animationDelay: '2.5s' }} />
       </div>
     </>
