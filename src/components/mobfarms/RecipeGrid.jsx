@@ -1,4 +1,4 @@
-// src/components/makanan/RecipeGrid.jsx
+// src/components/minuman/RecipeGrid.jsx
 import { Clock, Star, ChefHat } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
@@ -7,14 +7,12 @@ export default function RecipeGrid({ recipes }) {
   const cardRefs = useRef([]);
 
   useEffect(() => {
-   
     cardRefs.current = cardRefs.current.slice(0, recipes.length);
     
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const index = parseInt(entry.target.dataset.index);
-     
           setTimeout(() => {
             setVisibleCards(prev => new Set(prev).add(index));
           }, (index % 3) * 150); 
@@ -32,12 +30,12 @@ export default function RecipeGrid({ recipes }) {
     return () => {
       observer.disconnect();
     };
-  }, [recipes]); 
+  }, [recipes]);
 
   return (
     <section>
-       <h1 className="text-3xl md:text-5xl font-bold text-slate-800 text-center mb-4">
-        Explore Buildings
+      <h1 className="text-3xl md:text-5xl font-bold text-slate-800 text-center mb-4">
+        Explore Mob Farms
       </h1>
       <p className="text-center text-slate-500 max-w-2xl mx-auto mb-8">
         Find the one best suited for you!
@@ -53,9 +51,9 @@ export default function RecipeGrid({ recipes }) {
                 : 'translate-y-8 opacity-0'
             }`}
           >
-            
-            <div className="relative bg-white/15 backdrop-blur-xl border border-white/25 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:shadow-2xl shadow-blue-500/5 hover:shadow-blue-500/15 transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:bg-white/20">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            {/* Card structure is consistent, only the tag is changed */}
+            <div className="relative bg-white/15 backdrop-blur-xl border border-white/25 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:shadow-2xl shadow-green-500/5 hover:shadow-green-500/15 transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:bg-white/20">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative h-32 md:h-56 overflow-hidden">
                 <img 
                   src={recipe.image_url}
@@ -66,25 +64,26 @@ export default function RecipeGrid({ recipes }) {
               </div>
               <div className="relative z-10 p-4 md:p-8">
                 <div className="flex items-center justify-between mb-3 md:mb-4">
-                  <span className="text-xs font-semibold text-blue-700 bg-blue-100/90 px-2 md:px-3 py-1 md:py-1.5 rounded-full">
-                    Buildings
+                  {/* Changed tag color from blue to green */}
+                  <span className="text-xs font-semibold text-green-700 bg-green-100/90 px-2 md:px-3 py-1 md:py-1.5 rounded-full">
+                    Mob Farms
                   </span>
                   <div className="flex items-center space-x-1 bg-white/90 px-2 py-1 rounded-full">
                     <Star className="w-3 h-3 md:w-4 md:h-4 text-yellow-500 fill-current" />
-                    <span className="text-xs md:text-sm font-semibold text-slate-700">4.8</span>
+                    <span className="text-xs md:text-sm font-semibold text-slate-700">4.7</span>
                   </div>
                 </div>
-                <h3 className="font-bold text-slate-800 mb-3 md:mb-4 text-base md:text-xl group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
+                <h3 className="font-bold text-slate-800 mb-3 md:mb-4 text-base md:text-xl group-hover:text-green-600 transition-colors duration-200 line-clamp-2">
                   {recipe.name}
                 </h3>
                 <div className="flex items-center justify-between text-xs md:text-sm text-slate-600">
                   <div className="flex items-center space-x-1 md:space-x-2 bg-white/70 px-2 md:px-3 py-1 md:py-2 rounded-full">
                     <Clock className="w-3 h-3 md:w-4 md:h-4" />
-                    <span className="font-medium">{recipe.ingredients.length} Materials</span>
+                    <span className="font-medium">{recipe.ingredients.length} bahan</span>
                   </div>
                   <div className="flex items-center space-x-1 md:space-x-2 bg-white/70 px-2 md:px-3 py-1 md:py-2 rounded-full">
                     <ChefHat className="w-3 h-3 md:w-4 md:h-4" />
-                    <span className="font-medium">{recipe.steps.length} Steps</span>
+                    <span className="font-medium">{recipe.steps.length} langkah</span>
                   </div>
                 </div>
               </div>
@@ -92,9 +91,9 @@ export default function RecipeGrid({ recipes }) {
           </div>
         ))}
       </div>
-      {recipes.length === 0 && (
+       {recipes.length === 0 && (
         <div className="text-center py-16">
-            <p className="text-slate-500">Tidak ditemukan. Coba kata kunci lain.</p>
+            <p className="text-slate-500">Minuman tidak ditemukan. Coba kata kunci lain.</p>
         </div>
       )}
     </section>
