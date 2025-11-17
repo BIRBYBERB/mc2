@@ -7,7 +7,7 @@ import FeaturedMinumanSection from '../components/home/FeaturedMobfarmSection';
 
 export default function HomePage() {
   const featuredMakanan = Object.values(Buildings.builds).slice(0, 3);
-  const featuredMinuman = Object.values(Mobfarms.builds).slice(0, 2);
+  const featuredMinuman = Object.values(Mobfarms.Farns).slice(0, 2);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 pb-20 md:pb-8">
