@@ -1,7 +1,7 @@
 // src/pages/MakananPage.jsx
 import { useState, useEffect } from 'react';
 import { Buildings } from '../data/buildings';
-import RecipeGrid from '../components/buildings/RecipeGrid';
+import RecipeGrid from '../components/builders/RecipeGrid';
 
 export default function MakananPage() {
   const [searchQuery, setSearchQuery] = useState('');
